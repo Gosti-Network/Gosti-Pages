@@ -28,6 +28,10 @@ h1, h2, h3 {
 
 #nav {
     top: auto;
+    ul a {
+        color: #ddd
+    }
+    a:hover { color: #fff }
 }
 
 #banner {
