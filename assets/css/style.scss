@@ -4,8 +4,8 @@
 @import 'jekyll-theme-leap-day';
 
 #banner {
-  background: #2B2E2B;
-  border: 1px solid #3B3E3B;
+  background: #2e4a2e;
+  border: 1px solid #1b281b;
   top: 0px;
 }
 
@@ -13,4 +13,10 @@
   #banner {
     top: 0px;
   }
+}
+
+section {
+    background: #1e1e1e;
+    border: 1px solid #1b281b;
+    box-shadow: 0 1 2 1px #213121;
 }
