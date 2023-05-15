@@ -3,6 +3,18 @@
 
 @import 'jekyll-theme-leap-day';
 
+element.style {
+  color: #ddd
+};
+
+body {
+  background: #1e1e1e;
+  color: #ddd;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
 #banner {
   background: #2e4a2e;
   border: 1px solid #1b281b;
@@ -18,5 +30,5 @@
 section {
     background: #1e1e1e;
     border: 1px solid #1b281b;
-    box-shadow: 0 1 2 1px #213121;
+    box-shadow: none;
 }
