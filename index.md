@@ -4,7 +4,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[How Spriggan uses private DataLayer tables to authenticate and verify published content](./datalayerauthentication.html).
 
 There should be whitespace between paragraphs.
 
