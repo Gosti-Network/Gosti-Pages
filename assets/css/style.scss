@@ -5,7 +5,14 @@
 
 element.style {
   color: #ddd
+  h1, h2, h3 {
+    color: #888
+  }
 };
+
+header {
+  position: relative;
+}
 
 body {
   background: #1e1e1e;
@@ -15,8 +22,15 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+    color: #888;
+}
+
+#nav {
+    top: auto;
+}
+
 #banner {
-  background: #2e4a2e;
   border: 1px solid #1b281b;
   top: 0px;
 }
@@ -28,7 +42,8 @@ body {
 }
 
 section {
-    background: #1e1e1e;
+    background: #2e362e;
     border: 1px solid #1b281b;
     box-shadow: none;
+    margin-top: 0px;
 }
