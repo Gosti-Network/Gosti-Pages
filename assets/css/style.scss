@@ -3,7 +3,14 @@
 
 @import 'jekyll-theme-leap-day';
 
-.banner {
+#banner {
   background: #2B2E2B;
   border: 1px solid #3B3E3B;
+  top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  #banner {
+    top: 0px;
+  }
 }
