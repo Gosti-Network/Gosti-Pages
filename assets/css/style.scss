@@ -3,10 +3,6 @@
 
 @import 'jekyll-theme-leap-day';
 
-element.style {
-  color: #ddd
-};
-
 header {
   position: relative;
 }
@@ -19,22 +15,25 @@ body {
 }
 
 h1 {
-    color: #888;
+    color: #aaa;
 }
 h2 {
-    color: #888;
+    color: #aaa;
 }
 h3 {
-    color: #888;
+    color: #aaa;
 }
 h4 {
-    color: #888;
+    color: #aaa;
 }
 
 nav {
     top: auto;
     ul a {
         color: #999
+    }
+    ul li.tag-h1 a {
+        color: #ddd
     }
     a:hover { color: #fff }
 }
