@@ -4,7 +4,7 @@ layout: default
 
 
 # Our Mission
-Our Mission with Spriggan is simple, to give creators complete artistic freedom by making censorship impossible. Spriggan is created by creators, for creators. It is completely decentralized and open-source, allowing creators to publish and sell their work directly to their audience without any middlemen or payment processors.
+Our mission with Spriggan is simple, to give creators complete artistic freedom by making censorship impossible. Spriggan is created by creators, for creators. It is completely decentralized and open-source, allowing creators to publish and sell their work directly to their audience without any middlemen or payment processors.
 
 Our first target is the PC gaming market, and the multi-billion dollar goliath that is Steam, owned by Valve.
 
@@ -35,6 +35,8 @@ Whether through pressure from payment processors, or of their own free will, man
 As bad as hard censorship is, soft censorship is actually more harmful to artistic freedom. Every creator regardless of their medium and platform is constantly fighting against the terms of service and has to walk on eggshells to avoid having their sources of revenue cut off. If you look for it, you will see self censorship everywhere. Even on meaningless social media posts with no money at stake people still censor themselves when talking about topics like mental health, gender and sexuality, and political issues in fear of being censored by algorithms. These topics are incredibly important for people to talk about, and that censorship is extremely harmful.
 
 Social censors have become a big deal in the past 5-10 years with the rise of social media. Being "canceled" is a big deal. Social censors absolutly have the ability to force institutional censors to act. There are many instances like the youtube "ad-pocalypse" where social censors forced advertisers to pull their funding, and on smaller scales having sponsers drop creators. Ironically, it can be both good or bad to get canceled by a twitter mob. The attention that it brings can be very benifitial to creators, but can also be dangerous. Many artists, myself included like to hide our identity. When you create potentially controvercial artwork it is almost guaranteed that you will be harassed by some group of people online. With doxxing, there is solid chance of that harassment can carry over into the real world. The more that we can protect artists right to control their own privacy, the better.
+
+***
 
 ## Why does Spriggan use a Blockchain?
 

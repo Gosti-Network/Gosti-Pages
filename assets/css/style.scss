@@ -5,9 +5,6 @@
 
 element.style {
   color: #ddd
-  h1, h2, h3 {
-    color: #888
-  }
 };
 
 header {
@@ -25,9 +22,18 @@ body {
 h1 {
     color: #888;
 }
+h2 {
+    color: #888;
+}
+h3 {
+    color: #888;
+}
+h4 {
+    color: #888;
+}
 
 #nav {
-    top: 150px;
+    top: auto;
     ul a {
         color: #999
     }
