@@ -12,6 +12,17 @@ body {
   color: #ddd;
   line-height: 1.5;
   margin: 0;
+
+  a {
+    color: #339435;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+  strong {
+    color: #fff;
+  }
 }
 
 h1 {
