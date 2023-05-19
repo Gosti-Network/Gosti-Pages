@@ -8,15 +8,49 @@ Our mission with Spriggan is simple, to give creators complete artistic freedom 
 
 Our first target is the PC gaming market, and the multi-billion dollar goliath that is Steam, owned by Valve.
 
-# What is Spriggan
+# What is Spriggan?
 
-Spriggan started as an idea to create a video game marketplace that was completely decentralized and permissionless using Peer-to-Peer technologies like Bittorrent and blockchain, but the idea has expanded since then. Spriggan is an attempt to break apart the vertical monopoly that is inherent to centralized digital publishing of not only games but all forms of digital media.
+Spriggan started as an idea to create a video game marketplace that was decentralized and permissionless using Peer-to-Peer technologies like Bittorrent and blockchain, but the idea has expanded since then. Spriggan is an attempt to break apart the vertical monopoly that is inherent to centralized digital publishing of not only games but for all forms of digital media.
 
 ![diagram](/assets/images/diagram1.png)
 
-Spriggan is
+From the consumer side, Spriggan works just like any other PC gaming platform. It allows gamers to browse a marketplace of games, buy them, install them, and play them. The only difference being that they would be buying games using cryptocurrency, and would own copies of their games as non-fungible tokens (NFTs). ![Marketplace Screenshot](./assets/images/marketplaceScreenshot.jpg) **This does not require** use of a platform specific tokens that customers or publishers would have to buy. The "platform" does not touch transactions, all transactions happen directly between the game publisher and the customer. Publishers use our free and open-source tools to mint copies of their game and sell them directly on the open market using [offer files](https://www.chia.net/offers/). Games can be sold for any price set by the publisher, in any current or future token supported by the Chia blockchain including XCH, (Chia's native currency), wrapped bitcoin, wrapped Eth, and stable coins (tokens that are pegged to USD, or other fiat currencies).
+
+## A New Second-hand Games Market
+
+Being NFTs, Spriggan games are transferable and resellable. Publishers can set a percentage royalty to get back a slice of every resale. This will create an interesting secondary market where your game can find its own market price over time that you can control by limiting supply of new copies of your game. This is just one of the possibilities that Chia's flexibility can bring, but it is by no means necessary. It is possible to just set a high royalty, (as high as 100%) to prevent resale. Royalties are enforced on-chain on Chia. Eventually it will be possible to programatically limit transfers to make resale impossible, but hasn't been implemented yet.
+
+## What do the NFTs do?
+
+Spriggan NFTs are not like other NFTs you might have heard of. They simply represent ownership of a product, such as a game. They are not unique or collectable. They are not an investment, or a speculative asset and they do not represent equity, or anything other than a copy of the product that you bought. It is possible to create limited "Special Editions" and other gimmicks like that, but that is not the point of using NFTs for this.
+
+When you have a Spriggan game NFT in your wallet, you can cryptographically prove that you own that specific product in a way that can be publically verified. This is used by the marketplace software to verify ownership for access to the torrent files for downloading, and passwords to decrypt game files without needing to deal with user authentication, and making all marketplaces interchangable. It will also be possible to create plugins for common game engines to require verification of ownership to play a game, or premium parts of a game to prevent piracy. This is next on our list of projects to tackle after we launch.
+
+## A Marketplace of Marketplaces
+
+The most exciting feature of Spriggan is its modular design. Spriggan was built from the ground not as a marketplace, but as a framework for this type of marketplace. As of writing, Spriggan is actually 3 different, independant applications running on this framework. The marketplace app, the library app, and the publishing app. The 4th application to be built will be the app store. This will be similar to the marketplace, but instead of games, it will allow users to install additional apps into Spriggan. All of our code is open-source and available to everyone. We hope other developers will create their own apps for Spriggan including alternatives to our built in apps, other marketplaces. Eventually, we want Spriggan to expand into markets for other types of content like e-books, audio books, and more. Our apps are written in Reactjs and compiled to simple HTML and Javascript. Our hope is that we can build an ecosystem of developers to build out this project to make the front end for the real **Web 3**.
+
+***
+
+# How Does Spriggan Make Money?
+
+Well... it doesn't. Unlike traditional platforms, Spriggan does not and cannot take any percentage cut from sales. However, being Peer-to-Peer, we will have very low operating expenses compared to traditional platforms. Until such a time that advertising and paid promotion makes sense, Spriggan does not have a way to earn income. We also do not have any investors. Investors don't like the idea of not making money, and we refuse to take money from anyone who might compromise our vision for Spriggan. So far, all development work has been donated by our only developer (me) over the past year+.
+
+We are actively looking for people and organizations to sponsor the development of Spriggan. We are in desperate need of funding. I'll spare you the gory details, but development of Spriggan cannot continue at this rate without us bringing in at least a little bit of money as soon as possible. It would be amazing to have enough income from sponsors to consider hiring another developer or 2, but if we could just keep paying rent, that would be a huge weight off my chest.
+
+Artistic freedom is incredibly important. If you think so too, please consider helping us out with our mission.
+
+[Support Spriggan](#support-spriggan)
+
+***
 
 # Blog
+
+## Our Upcoming Beta
+
+We are preparing for a testnet beta. Spriggan has a lot of moving pieces that still need to be tested, but all of the major features are functional. If you are a game developer/publisher and want to try out the system, please come to our [discord server](https://discord.gg/3C8cgfS6e9) and say hello. We are in need of testers, and we want to get as many games as possible onboard for the eventual mainnet launch. We also want to hear feedback, to know what your concerns are, and how we can improve.
+
+***
 
 ## What Censorship are Creators Facing?
 
@@ -28,13 +62,13 @@ Institutional censors are conventional platforms, advertisers, payment processor
 
 You may think I am being a conspiracy theorist when I'm talking about governments and banks censoring content, but I'm not. Hard censorship is much more common than you probably think it is. There are [hundreds of instances](https://en.wikipedia.org/wiki/List_of_banned_video_games_by_country) of govenments all around the world banning certain video games for all kinds of reasons. Often, it isn't the most extreme content that gets banned, it is only notable products that reach a large enough scale of outrage for governments to act. It is not unreasonable for artists to fear more general, wide spread censorship policies that make their work illegal in many countries including western countries that are relatively liberal. The most common cause of government bans (aside from the obvious violence and sexual content) are depicting gambling or drug use, LGBT themes, and political messaging. There isn't much that can be done about the laws of other countries, but through decentralization we can make it much harder for governments to ban content on a practical level. This is especially important when talking about content with political themes, and issues regarding human rights. Artistic freedom for this type of content is extremely important.
 
-It is very common for payment processors and banks to pressure platforms to ban any type of sexualized content. Mastercard and Visa are the biggest players in this, they have a history of [going against pornographic content](https://www.cnn.com/2021/08/20/tech/onlyfans-explicit-content-ban-payment/index.html). But Paypal also has dipped it's toes into to censorship game by [seizing the funds](https://techraptor.net/gaming/news/lewd-idol-project-paypal-account-locked-kickstarter-funds) of several Patreon and Kickstarter projects with sexual themes.
+Recently, it has been is very common for financial institutions payment processors and banks to pressure platforms to censor sexualized content. Mastercard and Visa are the biggest players in this, they have a history of [going against pornographic content](https://www.cnn.com/2021/08/20/tech/onlyfans-explicit-content-ban-payment/index.html). But Paypal also has dipped it's toes into to censorship game by [seizing the funds](https://techraptor.net/gaming/news/lewd-idol-project-paypal-account-locked-kickstarter-funds) of several Patreon and Kickstarter projects with sexual themes. Regardless of how you feel about hardcore pornographic content, sexuality is a core part of the human experience and will always have a place in art. The right to create sexualized content needs to be protected.
 
-Whether through pressure from payment processors, or of their own free will, many platforms large and small participate in censorship. Apple has made its [stance on sexualized content very clear](https://www.theverge.com/2021/5/7/22425759/epic-apple-trial-app-store-itch-io-offensive-sexualized-unspeakable-games-day-5), it is almost impossible to release content with a hint of sexuality on any apple device. Last year gaming platform GameJolt [banned all games with sexual content](https://www.kotaku.com.au/2022/01/game-jolt-bans-sex/). Recently there have been rumours that itch.io, one of the largest platforms for indie game developers [may cut off some of the payment options for games with sexual content](https://itch.io/t/2809361/will-adult-games-be-forced-into-direct-payments-instead-of-collected-by-itchio). Steam, by far the largest PC gaming platform allows sexual content, and is fairly opposed to censorship, but cases still fall through the cracks. I myself was hard censored by Steam. I released a game that I thought followed their terms of service, but according to the person who reviewed my game, it did not. It wasn't sexual content that got my game banned, it was a perfectly normal PG-13 scene where 2 teenage characters kissed. This was deemed "sexual content involving a minor" and resulted in my game being completely removed from the platform.
+Whether through pressure from payment processors, or of their own free will, many platforms large and small participate in censorship. Apple has made its [stance on sexualized content very clear](https://www.theverge.com/2021/5/7/22425759/epic-apple-trial-app-store-itch-io-offensive-sexualized-unspeakable-games-day-5), it is almost impossible to release content with a hint of sexuality on any apple device. Last year gaming platform GameJolt [banned all games with sexual content](https://www.kotaku.com.au/2022/01/game-jolt-bans-sex/). Recently there have been rumours that itch.io, one of the largest platforms for indie game developers [may cut off some of the payment options for games with sexual content](https://itch.io/t/2809361/will-adult-games-be-forced-into-direct-payments-instead-of-collected-by-itchio), likely due to pressure on the financial or legal side. Steam, by far the largest PC gaming platform allows sexual content, but cases still fall through the cracks. I myself was hard censored by Steam. I released a game that I thought followed their terms of service, but according to the person who reviewed my game, it did not. It wasn't sexual content that got my game banned, it was a perfectly normal PG-13 scene where 2 teenage characters kissed. This was deemed "sexual content involving a minor" and resulted in my game being completely removed from the platform. These "grey area" cases are common when you don't have clear lines drawn for what is, and isn't okay. Platforms leave their terms of service vague on purpose so that they can ban almost any content without being legally liable. It is not uncommon terms of service to include lines like "*Content with graphic depictions of violence or that promotes acts of violence will not be allowed.*" while obviously allowing and promoting violent content. Artists then have to guess as to what is and isn't allowed. The reality of this is, the platform can ban anyone they want without consequence.
 
 As bad as hard censorship is, soft censorship is actually more harmful to artistic freedom. Every creator regardless of their medium and platform is constantly fighting against the terms of service and has to walk on eggshells to avoid having their sources of revenue cut off. If you look for it, you will see self censorship everywhere. Even on meaningless social media posts with no money at stake people still censor themselves when talking about topics like mental health, gender and sexuality, and political issues in fear of being censored by algorithms. These topics are incredibly important for people to talk about, and that censorship is extremely harmful.
 
-Social censors have become a big deal in the past 5-10 years with the rise of social media. Being "canceled" is a big deal. Social censors absolutly have the ability to force institutional censors to act. There are many instances like the youtube "ad-pocalypse" where social censors forced advertisers to pull their funding, and on smaller scales having sponsers drop creators. Ironically, it can be both good or bad to get canceled by a twitter mob. The attention that it brings can be very benifitial to creators, but can also be dangerous. Many artists, myself included like to hide our identity. When you create potentially controvercial artwork it is almost guaranteed that you will be harassed by some group of people online. With doxxing, there is solid chance of that harassment can carry over into the real world. The more that we can protect artists right to control their own privacy, the better.
+Social censors have become a big deal in the past 5-10 years with the rise of social media. Being "canceled" is a big deal. Social censors absolutly have the ability to force institutional censors to act. There are many instances like the youtube "ad-pocalypse" where social censors forced advertisers to pull their funding, and on smaller scales having sponsers drop specific creators for. Ironically, it can be both good or bad to get canceled by a twitter mob. The attention that it brings can be very benifitial to creators, but can also be dangerous. Many artists, myself included like to hide our identity. When you create potentially controvercial artwork it is almost guaranteed that you will be harassed by some group of people online. With doxxing, there is solid chance of that harassment can carry over into the real world. The more that we can protect artists rights and give them tools to control their own privacy, the better.
 
 ***
 
@@ -109,3 +143,20 @@ Chia's [DataLayer](https://www.chia.net/datalayer/) is an amazing tool capable o
 Using our open source tools, creators can create and manage their own private DataLayer data store of products locally on their own system. This data is hashed and put on the blockchain. Using that publicly available hash, anyone can verify that data they have is authentic, while keeping the data private. Creators can be shared their product updates with trusted marketplaces to help distribute updates to everyone who owns a copy of their product. This private data includes torrent files and passwords to decrypt their content, which stay private between the creator, trusted marketplaces, and customers who have purchased the content.
 
 Using this system simplifies publishing greatly because marketplaces do not have to care where their data came from, only that it is legitimate. User authentication is not necessary. When a marketplace receives an update for a product, or a request to list a new product, they only need to check that the hash of the data matches the hash on the blockchain to know that the update is legitimate.
+
+# Support Spriggan
+
+You can support us on Patreon: [https://www.patreon.com/Gaerax](https://www.patreon.com/Gaerax)
+Chia: xch1mnh5w6apdpq8v0atfw0e9rv9n3wyvgc90h9yczcdkuvfjzl8ej4s7530x3
+
+I have a paypal, but it's connected to my real identity, and I prefer to not dox myself publicly.
+
+If you are a business, and want to sponsor us, please reach out on Twitter, or email!
+
+# Contact Us
+
+We do not have official socials set up yet, but you can reach me directly Via any of these methods.
+
+Email: [gaerax@gmail.com](gaerax@gmail.com)
+Twitter: [twitter.com/Gaeraxx](https://twitter.com/Gaeraxx)
+Discord: [discord.gg/3C8cgfS6e9](discord.gg/3C8cgfS6e9)
