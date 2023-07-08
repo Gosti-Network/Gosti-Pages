@@ -108,7 +108,7 @@ offer1qqr83wcuu2rykcmqvpsxygqqemhmlaekcenaz02ma6hs5w600dhjlvfjn477nkwz369h88kll7
 
 You could copy and paste this into a Chia wallet to buy an NFT directly from my wallet to yours. I don’t have to know or care who you are and it’s completely secure. The only thing you can do with this offer is ignore it, or accept it and trade 1 XCH for my 1 shitty, worthless NFT.
 
-That is how trading works under the hood on Chia, and how it cannot be censored. A common saying in Chia is that exchange is a verb, and not a noun. Using offer files, any means of communication, including this blog can be used to trade any arbitrary assets globally and completely trustlessly.
+That is how trading works under the hood on Chia, and how it cannot be censored. A common saying in Chia is that exchange is a verb, and not a noun. Using offer files, any means of communication, including this blog can be used to trade assets globally and completely trustlessly.
 
 ### Legal and Regulatory Compliance
 Fraud is rampant in the cryptocurrency world. Chia was founded in 2017, and didn’t launch publicly until 2021. Chia could have launched a lot sooner, and made a lot more money if they didn’t do things the right way. Chia has worked with the SEC since the beginning and has not participated in the questionable, and illegal activity that other blockchain companies have been involved in. Chia has gone through the conventional process of raising funding and is preparing for an IPO when they will become the first blockchain company to go public.
@@ -122,6 +122,8 @@ Bitcoin, and any other blockchain that uses Proof-of-Work (PoW) consensus consum
 ### Not Proof-of-Stake
 Proof-of-Stake (PoS) is often touted as a solution to bitcoins energy usage, but PoS has huge security flaws that make PoS blockchains very centralized. The most important number when measuring a blockchains security is the Nakamoto Coefficient, which in simple terms, is the number of the largest entities that would have to collude to take control of the blockchain. Most blockchains (including bitcoin, and other top blockchains by market cap) have an estimated NC of < 10, some are as low as 2-3. Chia's NC is by far the highest at ~90 as of writing. Chia is by far the most decentralized blockchain in existence with over 100,000 nodes [all over the world](https://dashboard.chia.net/d/em15uQ47k/peer-info?orgId=1).
 
+### Decentralized Identity and Verifiable Credentials
+This is a very technical topic, that deserves it's own [blog post](#understanding-verifiable-credentials). On a basic level, these technologies will (in the future) allow for things like age gating content and region specific pricing. Verifiable credentials can be issued by a trusted authority so that a user can cryptographically prove that for instance, they are over 18, or are citizen of x country without needing to disclose all of their personal information to everyone that asks.
 
 ### A Good Team Behind it
 Chia was founded by Bram Cohen, the inventor of the Bittorrent protocol. Bitcoin was inspired by and named after Bittorrent. Bram invented peer to peer technologies and is one of the most brilliant minds in computing. There is not a person on earth more qualified to design a public blockchain.
@@ -147,6 +149,10 @@ Chia's [DataLayer](https://www.chia.net/datalayer/) is an amazing tool capable o
 Using our open source tools, creators can create and manage their own private DataLayer data store of products locally on their own system. This data is hashed and put on the blockchain. Using that publicly available hash, anyone can verify that data they have is authentic, while keeping the data private. Creators can be shared their product updates with trusted marketplaces to help distribute updates to everyone who owns a copy of their product. This private data includes torrent files and passwords to decrypt their content, which stay private between the creator, trusted marketplaces, and customers who have purchased the content.
 
 Using this system simplifies publishing greatly because marketplaces do not have to care where their data came from, only that it is legitimate. User authentication is not necessary. When a marketplace receives an update for a product, or a request to list a new product, they only need to check that the hash of the data matches the hash on the blockchain to know that the update is legitimate.
+
+## Understanding Verifiable Credentials
+
+Verifiable credentials are a feature that is in the development pipeline of the Chia blockchain. It is not something that exists currently, but they are very important for Spriggan long term.
 
 # Support Spriggan
 
