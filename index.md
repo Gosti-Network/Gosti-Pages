@@ -172,4 +172,4 @@ Email: [gaerax@gmail.com](gaerax@gmail.com)
 
 Twitter: [twitter.com/Gaeraxx](https://twitter.com/Gaeraxx)
 
-Discord: [discord.gg/3C8cgfS6e9](discord.gg/3C8cgfS6e9)
+Discord: [discord.gg/PbGFvvxSpz]([discord.gg/PbGFvvxSpz](https://discord.gg/PbGFvvxSpz))
