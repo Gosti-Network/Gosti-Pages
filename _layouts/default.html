@@ -7,20 +7,41 @@
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!-- <script src="{{ '/assets/js/main.js' | relative_url }}"></script> -->
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- <script>
+      console.log('hello'); 
+      var $container = $('.gosti-container');
+      var $drone = $('.drone');
+      var droneCenter = {
+        x: $drone.width() / 2,
+        y: $drone.height() / 2
+      };
+      $container.on('mousemove', function(event) {
+        console.log(event.offsetX, event.offsetY);
+        $drone.css('transform', `translate3d(${event.offsetX - droneCenter.x}px, ${event.offsetY - droneCenter.y}px, 0)`);
+      });
+    </script> -->
 
     {% include head-custom.html %}
   </head>
   <body>
 
       <header>
-        <!-- <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1> -->
-        <img src="{{ '/assets/images/Spriggan512.png' | relative_url }}" alt="logo" />
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
+        <!-- <div class="gosti-container">
+          <div class="drone">
+            <img class="gosti-image" src="{{ '/assets/images/Gosti.webp' | relative_url }}" alt="logo"  width="100%"/>
+          </div>
+        </div> -->
+
+         <!-- <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1> -->
+         <img src="{{ '/assets/images/GostiAnim.webp' | relative_url }}" alt="logo" width="100%" max-width="1080px" />
+         <!-- <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p> -->
+         <h1>Games and Other Stuff<br/>Traded without Intermediaries</h1>
       </header>
 
       <div id="banner">
@@ -38,20 +59,189 @@
           </div>
         {% endif %}
       </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
       <section>
-        {{ content }}
 
-      </section>
+        <div>
+          <h2>Gosti is...</h2>
+        </div>
+
+        
+        <button class="collapsible">Free & Open Source</button>
+        <div class="content">
+          <p>The Gosti Client, and all core functionality we release is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a></p>
+          <p>Anyone can use, modify, and redistribute Gosti as they see fit, as long as they follow the terms of the license.</p>
+          <p>Gosti does not, and <strong>cannot</strong> charge a fee for creation and trading of assets using Gosti. This is a key design decision, and is not something that we can change our minds about, even if we wanted to.</p>
+          <p>We will likely add options to voluntarily support Gosti's development, but being open source, any attempts by us to force users to pay fees could easily be bypassed.</p>
+        </div>
+
+        <div>
+        <button class="collapsible">Decentralized & P2P</button>
+        <div class="content">
+          <p>The Gosti network has been designed to be as Peer-to-Peer (P2P) as possible with centralized servers only being used where absolutely necessary or for optional, non-critical features. The core functionality of Gosti, being able to publish, distribute, sell, buy, download, and consume digital content, (primarily PC Games) using the open source Gosti Client is fully P2P and cannot be stopped or limited by anyone, including us.</p>
+          <p>Gosti only uses centralized servers for filtering out spam/scams, ensuring uptime, and for additional features that require a centralized authority. That being said, all centralized parts of Gosti are open source and designed so that any person, or organization can, and should launch their own alternative servers that users can seamlessly switch between if they do not agree with our actions.</p>
+        </div>
+
+        <button class="collapsible">Creator Centric</button>
+        <div class="content">
+          <p>Gosti gives creators complete control over their work.</p>
+          <p>With the Gosti client, you can easily create and manage your own digital assets (copies of your game) on your own computer using your own software. The assets you create stay in your own wallet until they are sold directly to whoever buys it from you. No third party, (including us) is involved in the transaction at all.</p>
+          <p>Only you as the creator are able to create new copies of your content.</p>
+        </div>
+
+        <button class="collapsible">Extensible</button>
+        <div class="content">
+          <p>The Gosti Client has been built from the ground up to be modular, and to allow additional apps to be added and removed by the user at will.</p>
+          <p>We hope a community of like minded developers will build apps for additional markets like video, music, social media, journalism, that can benefit from the underlying functionality of the Gosti Client.</p>
+          <p>We plan to implement a Gosti "App Store" along side our video game marketplace as our next product.</p>
+        </div>
+
+        <button class="collapsible">Crypto, but not in a bad way</button>
+        <div class="content">
+          <p>Most creatives are skeptical of blockchain related projects, and for good reason. Other existing crypto projects focus on exotic (often morally dubious) monetization schemes that make promises that are too good to be true. They preach about revolutionizing your industry and try to tell you how you should monetize your work, all while taking the same fees and operating in the same way as any other platform.</p>
+          <p>Gosti's goal is to give creators the tools and control to monetize their work however they see fit, starting with the most basic one-time payment model that we are used to.</p>
+          <p>Other monetization schemes, such as subscriptions, micro transactions are possible, and are in our development roadmap, but are not yet supported.</p>
+          <p>Note: No investment of money is required by either publishers, or end users to use Gosti.</p>
+        </div>
+
+        <button class="collapsible">Not Vaporware</button>
+        <div class="content">
+          <p>Unlike many crypo projects, real development effort has already gone into Gosti. You can check our Github.</p>
+          <p>Our claims are not theoretical, Gosti has an *almost* fully functional Beta available now, for you to experiment with.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <div>
+        <h2>Gosti is Built on...</h2>
+      </div>
+
+      <div>
+        <button class="collapsible">Chia Blockchain</button>
+        <div class="content">
+          <p>It is impossible to make a decentralized platform monetizable without a blockchain. Introducing payment processors like PayPal and Stripe adds a critical flaw that censorship advocates can exploit. A properly decentralized blockchain cannot be censored by anyone, even governments.</p>
+          <p>As well as being the most decentralized blockchain, <a href="https://chia.net">Chia</a> uses a new consensus algorithm called Proof of Space & Time (PoST) which uses a tiny fraction of the energy of Proof of Work (PoW) blockchains like Bitcoin for equal, or better security.</p>
+          <p>The whole Chia Blockchain even uses significantly less energy than large banks and conventional payment processors like PayPal.</p>
+          <img src="{{ '/assets/images/ChiaEnergy.jpg' | relative_url }}" alt="logo" width="100%" max-width="1080px" />
+          <p>Along with their dedication to climate through their <a href="https://climateactiondata.org/">work with The World Bank, and IFC on a global carbon credit market</a>, and by promoting e-waste prevention though their work <a href="https://circulardrives.org/"> with the Circular Drive Initiative</a>. Chia is one of, if not the most Environmentally friendly blockchains out there.</p>
+        </div>
+
+        <button class="collapsible">BitTorrent</button>
+        <div class="content">
+          <p><a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent</a> was the original P2P network. Before the era of streaming, the BitTorrent protocol accounted for over 60% of internet traffic. Even now it is still widely used, not only for piracy, which many people associate it with, but for many legitimate use cases by large companies for its efficiency, speed and security.</p>
+          <p>Gosti uses BitTorrent to distribute content and provide fast and efficient and downloads across the network.</p>
+        </div>
+
+        <button class="collapsible">Nostr</button>
+        <div class="content">
+          <p><a href="https://nostr.com/">Nostr</a> is an innovative decentralized social media protocol that is growing in popularity. Nostr is one of our biggest inspirations. The name Gosti (Games and Other Stuff Traded without Intermediaries) is an homage to Nostr (Notes and Other Stuff Transmitted by Relays).</p>
+          <p>While it isn't our #1 priority at the moment, building social features into the Gosti client for product reviews, and connecting with your friends and other gamers will be critical for the success for Gosti. Nostr is the obvious choice for this.</p>
+        </div>
+
+      </div>
+
+  </section>
+
+  <section>
+
+    <div>
+      <h2>Gosti needs help! <img src="{{ '/assets/images/Gosti.webp' | relative_url }}" alt="logo" class="gosti-image" style="width: 64px;float: right;"  width="64px"/></h2>
+    </div>
+
+    <div>
+      <p>Gosti is an extremely ambitious project, and we can use all the help we can get. We need...</p>
+    </div>
+
+    <button class="collapsible">Developers</button>
+    <div class="content">
+      <p>We need passionate developers who share our vision for an unstoppable platform for digital content publishing, and to support freedom of expression world wide.</p>
+      <p>We would like to recruit developers to work with us directly on Gosti. As we are still a very young project, so we can't promise any meaningful compensation at this time. For the right candidates, of course we can talk about equity and/or payment in the future when we acquire proper funding.</p>
+      <p>We also would love to support any developers who want to create their own projects, or integrate existing projects with Gosti. The Gosti Client is designed to be modular and extensible. Our video game marketplace is just one potential application of Gosti's underlying technology. Video, music, journalism, etc. There are countless markets that can benefit from censorship resistant publishing. We can't build it all alone, but we would love to help you help us. (Gosti apps are simply compiled React.js apps, or any website that can run on an Electron.js client) </p>
+    </div>
+
+    <button class="collapsible">Sponsors</button>
+    <div class="content">
+      <p>Funding open source software development is notoriously difficult. This project is certainly no exception.</p>
+      <p>Our project sits in a weird place between the worlds of crypto currency, and the largely crypto skeptical gaming industry. We have already been rejected by several fundraising sites including kickstarter and indiegogo due to our use of blockchain technology.</p>
+      <p>Gosti has the potential to save game publishers a LOT of money. If Gosti's success would benefit you or your business, please consider sponsoring our development. We would benefit immensely from any support, both financially, and in helping us gain legitimacy in the gaming community.</p>
+    </div>
+
+    <button class="collapsible">Beta Testers & Feedback</button>
+    <div class="content">
+      <p>With the release of our beta, we want to reach out to as many game developers and publishers as possible not only to work out any bugs in the system, but also to better understand the concerns and needs of our potential users. Please join our <a href="">Discord</a> to learn more!</p>
+      <p>We are under no illusion that Gosti is a small project, likely full of bugs, has no financially backing, and has no user base. However, everything has to start somewhere.</p>
+      <p>We want Gosti to be a platform for creators, by creators. The main purpose of this Beta is to catch and address the concerns of game devs early and build as much trust as we can with the game dev community. As a game developer myself (the founder) I understand the stigma around blockchain among creators and players alike. I know it is a big ask, but please take this project as a serious, and good faith effort to make a real next-gen marketplace technology the right way.</p>
+    </div>
+
+    <button class="collapsible">You to Spread The Word!</button>
+      <div class="content">
+        <p>Please follow us on social media, tell your friends, help get the word about about this project.</p>
+        
+    <div style="text-align: center;">
+        <div class="fa fa-discord">
+          <a href="https://discord.gg/dwgtVCcvp8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+              <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+            </svg>
+          </a>
+        </div>
+        <div class="fa fa-x">
+          <a href="#">
+            <svg width="16" height="16" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/>
+            </svg>
+          </a>
+        </div>
+        <div class="fa fa-reddit">
+          <a href="#">
+            <svg width="16" height="16" viewBox="0 0 28.9 29" xmlns:svg="http://www.w3.org/2000/svg">
+            <style type="text/css" id="style2">
+              .st1{fill:#FFFFFF;}
+            </style>
+            <g id="g13" transform="matrix(1.4874741,0,0,1.4874741,-6.9776044,-7.1515126)">
+              <g  transform="translate(-11,-12)" id="g11">
+                <path id="vor3i" class="st1" d="m 33.9,28.7 c 0,0.2 0,0.4 0,0.6 0,3.3 -3.8,5.9 -8.5,5.9 -4.7,0 -8.5,-2.6 -8.5,-5.9 0,-0.2 0,-0.4 0,-0.6 -1.1,-0.5 -1.5,-1.7 -1.1,-2.8 0.3,-0.8 1.1,-1.3 1.9,-1.2 0.6,0 1.1,0.2 1.5,0.6 1.7,-1.1 3.7,-1.8 5.7,-1.8 l 1.1,-5 c 0,-0.1 0.1,-0.2 0.1,-0.2 0.1,-0.1 0.2,-0.1 0.3,-0.1 l 3.5,0.8 c 0.4,-0.7 1.3,-1.1 2,-0.7 0.7,0.4 1.1,1.3 0.7,2 -0.4,0.7 -1.3,1.1 -2,0.7 -0.5,-0.2 -0.8,-0.7 -0.8,-1.3 l -3.1,-0.7 -1,4.5 c 2.2,0.1 4.2,0.8 5.6,1.8 0.8,-0.8 2.2,-0.8 3,0 0.4,0.4 0.6,0.9 0.6,1.5 0.3,0.9 -0.3,1.6 -1,1.9 z m -11.7,1.1 c 0.8,0 1.5,-0.7 1.5,-1.5 0,-0.8 -0.7,-1.5 -1.5,-1.5 -0.8,0 -1.5,0.7 -1.5,1.5 0,0.8 0.6,1.5 1.5,1.5 z m 6.9,1.9 c -0.2,-0.2 -0.4,-0.2 -0.5,0 -0.6,0.7 -2,0.9 -3,0.9 -1,0 -2.4,-0.2 -3,-0.9 -0.2,-0.2 -0.4,-0.2 -0.5,0 -0.2,0.2 -0.2,0.4 0,0.5 1,1 3,1.1 3.6,1.1 0.6,0 2.5,-0.1 3.6,-1.1 -0.1,-0.1 -0.1,-0.3 -0.2,-0.5 z m 1.2,-3.4 c 0,-0.8 -0.7,-1.5 -1.5,-1.5 -0.8,0 -1.5,0.7 -1.5,1.5 0,0.8 0.7,1.5 1.5,1.5 0.8,0 1.5,-0.7 1.5,-1.5 z" />
+              </g>
+            </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    If you are interested in assisting us in our mission, or if you have questions, please contact us at <a href="mailto:gaerax@gmail.com">gaerax@gmail.com</a> or on our <a href="">Discord</a>
+
+</section>
+      
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+      <!-- <section>
+        {{ content }}
+      </section> -->
+
       <footer>
         {% if site.github.is_project_page %}
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
       </footer>
-    </div>
   </body>
 </html>

@@ -5,10 +5,12 @@
 
 header {
   position: relative;
+  width: 100%;
+  background: rgb(18, 18, 18);
 }
 
 body {
-  background: #1e1e1e;
+  background: #000000;
   color: #ddd;
   line-height: 1.5;
   margin: 0;
@@ -27,32 +29,205 @@ body {
 
 h1 {
     color: #aaa;
+    text-size-adjust: 100%;
 }
 h2 {
     color: #aaa;
+    animation: bottom-border-rgb 9s infinite linear ;
+    width: fit-content;
 }
 h3 {
     color: #aaa;
+    animation: bottom-border-rgb 9s infinite linear ;
+    width: fit-content;
 }
 h4 {
     color: #aaa;
+    animation: bottom-border-rgb 9s infinite linear ;
+    width: fit-content;
 }
 
-nav {
-    top: auto;
-    ul a {
-        color: #999
-    }
-    ul li.tag-h1 a {
-        color: #ddd
-    }
-    a:hover { color: #fff }
+
+@keyframes bottom-border-rgb {
+  0%   { border-bottom: 2px solid #d7490c; }
+  15%  { border-bottom: 2px solid #c7b919; }
+  30%  { border-bottom: 2px solid #41ca1c; }
+  45%  { border-bottom: 2px solid #22c7cd; }
+  60%  { border-bottom: 2px solid #0C4CC5; }
+  75%  { border-bottom: 2px solid #7814be; }
+  80%  { border-bottom: 2px solid #d633d3; }
+  100% { border-bottom: 2px solid #d7490c; }
+} 
+
+@keyframes border-sides-rgb {
+  0%   { border-right: 4px solid #d7490c; border-left: 4px solid #d7490c; }
+  15%  { border-right: 4px solid #c7b919; border-left: 4px solid #c7b919; }
+  30%  { border-right: 4px solid #41ca1c; border-left: 4px solid #41ca1c; }
+  45%  { border-right: 4px solid #22c7cd; border-left: 4px solid #22c7cd; }
+  60%  { border-right: 4px solid #0C4CC5; border-left: 4px solid #0C4CC5; }
+  75%  { border-right: 4px solid #7814be; border-left: 4px solid #7814be; }
+  80%  { border-right: 4px solid #d633d3; border-left: 4px solid #d633d3; }
+  100% { border-right: 4px solid #d7490c; border-left: 4px solid #d7490c; }
+}
+
+@keyframes border-rgb {
+  0%   { border: 1px solid #d7490c; }
+  15%  { border: 1px solid #c7b919; }
+  30%  { border: 1px solid #41ca1c; }
+  45%  { border: 1px solid #22c7cd; }
+  60%  { border: 1px solid #0C4CC5; }
+  75%  { border: 1px solid #7814be; }
+  80%  { border: 1px solid #d633d3; }
+  100% { border: 1px solid #d7490c; }
+}
+
+@keyframes border-rgb-2 {
+  0%   { border: 2px solid #d7490c; }
+  15%  { border: 2px solid #c7b919; }
+  30%  { border: 2px solid #41ca1c; }
+  45%  { border: 2px solid #22c7cd; }
+  60%  { border: 2px solid #0C4CC5; }
+  75%  { border: 2px solid #7814be; }
+  80%  { border: 2px solid #d633d3; }
+  100% { border: 2px solid #d7490c; }
+}
+
+@keyframes bg-rgb {
+  0%   { background: #d7490c; }
+  15%  { background: #c7b919; }
+  30%  { background: #41ca1c; }
+  45%  { background: #22c7cd; }
+  60%  { background: #0C4CC5; }
+  75%  { background: #7814be; }
+  80%  { background: #d633d3; }
+  100% { background: #d7490c; }
+}
+
+@keyframes jump {
+  0%   { bottom: 0px; }
+  100%  { bottom: 10px; }
+}
+@keyframes sway {
+  0%   { left: -20%; }
+  50%  { left: 850%; }
+  100%   { left: 0%; }
+}
+
+#banner .button {
+  background: linear-gradient(#323232, #121212);
+  border: 0px solid #000000;
+  animation: border-rgb 9s infinite linear ;
+  &:hover {
+    background: linear-gradient(#323232, #454545);
+  }
+}
+
+
+.gosti-container {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+  pointer-events: all;
+}
+
+.drone {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  transition: transform 7000ms ease-in-out;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.gosti-image {
+  position: relative;
+  animation: jump 0.5s infinite alternate;
+  max-width: 256px;
+  width: 100%;
+  pointer-events: none;
+}
+
+hr {
+  background: #41ca1c;
+  animation: bg-rgb 9s infinite linear ;
+  height: 6px;
+  top: 0px;
 }
 
 #banner {
-  border: 1px solid #1b281b;
-  background: #203120;
+  border: 0px solid #000000;
+  border-bottom: 1px #41ca1c; /* Fallback */
+  animation: bottom-border-rgb 9s infinite linear ;
+  background: #000000;
   top: 0px;
+}
+
+.collapsible {
+  cursor: pointer;
+  font: 40px/48px 'Retro', sans-serif;
+  text-shadow: 0px 2px 0px #235796;
+  margin: 0px;
+  overflow: hidden;
+  background-color: #323232;
+  padding-left: 10px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  color: #aaa;
+  border: 0px solid #000000;
+  border-bottom: 1px #41ca1c; /* Fallback */
+  animation: bottom-border-rgb 9s infinite linear ;
+  &:hover {
+    background: linear-gradient(#323232, #454545);
+  }
+}
+
+.collapsible:after {
+  content: '\002B';
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 5%;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #0e0e0e;
+}
+
+table {
+  background: #121212;
+  border-collapse: collapse;
+  width: 100%;
+  border: 0px solid #000000;
+  border-left: 0px solid #000;
+  height: fit-content;
+}
+
+tr {
+  border: 0px solid #000000;
+  border-left: 0px solid #000;
+}
+
+td:first-child {
+  border-left: 0px solid #000000;
+}
+
+td {
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  border: 0px solid #000000;
+  border-left: 0px solid #000;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,8 +237,78 @@ nav {
 }
 
 section {
-    background: #303530;
-    border: 1px solid #1b281b;
-    box-shadow: none;
-    margin-top: 0px;
+  height: fit-content;
+  background: #121312;
+  border: 0px solid #000000;
+  border-radius: 10px;
+  animation: border-sides-rgb 9s infinite linear ;
+  box-shadow: none;
+  margin-top: 10px;
+}
+
+section h2 {
+  margin-top: 0px;
+  animation: none;
+  width: max-content;
+}
+
+.fa {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  animation: border-rgb-2 9s infinite linear;
+  border-radius: 50%;
+  a {
+    width: 100%;
+    height: 100%;
+  }
+  svg {
+    pointer-events: none;
+    position: relative;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-x {
+  background: #000000;
+  color: white;
+}
+
+.fa-discord {
+  background: #5865F2;
+  color: white;
+  svg {
+    color: #fff;
+  }
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
 }
