@@ -45,10 +45,6 @@ h4 {
   margin-bottom: 1.25em;
 }
 
-p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
-}
-
 a {
   color:#4276b6;
   font-weight:400;
@@ -62,9 +58,6 @@ a small {
   display:block;
 }
 
-ul{
-  list-style-image:url('../images/bullet.png');
-}
 
 strong {
   font-weight: bold;
@@ -329,11 +322,12 @@ footer {
     padding:20px 20px;
     margin: 190px auto 20px;
     max-width: 1080px; 
+    width: auto;
   }
 
   footer{
     text-align: center;
-    margin: 20px auto;
+    margin: 20px;
     position: relative;
     left:auto;
     bottom:auto;
@@ -382,7 +376,7 @@ footer {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 10px;
-    margin: 190px auto 20px;
+    margin: 3px;
     width: auto;
   }
 
@@ -429,8 +423,8 @@ footer {
   }
 
   section {
-    margin-top: 130px;
-    margin-bottom: 0px;
+    margin: 3px;
+
     width: auto;
   }
 
@@ -469,7 +463,7 @@ footer {
 
   footer {
     text-align: center;
-    margin: 20px auto;
+    margin: 3px;
     position: relative;
     left:auto;
     bottom:auto;
